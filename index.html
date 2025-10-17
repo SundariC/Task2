@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page2 Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          righteous: ["Righteous", "sans-serif"],
+          rowdies: ["Rowdies", "sans-serif"],
+          saira: ["Saira", "sans-serif"],
+        },
+        container: {
+          center: true,
+          padding: "1rem",
+          screens: {
+            lg: "1124px",
+            xl: "1124px",
+            "2xl": "1124px",
+          },
+        },
+      },
+    },
+  };
+</script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Saira:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <img src="Assests/logo.svg" alt="Logo" class="size-20 my-6 absolute left-0">
+            <nav class="hidden sm:flex flex-1 justify-center items-center left-10 gap-12 font-righteous">
+                <a href="#" class="hover:text-blue-600 ">Home</a>
+                <a href="#" class="hover:text-blue-600 ">About</a>
+                <a href="#" class="hover:text-blue-600 ">Courses</a>
+                <a href="#" class="hover:text-blue-600 ">Contact</a>
+            </nav>
+            <img src="Assests/Page1-icons.svg" alt="Icons" class=" mr-30">
+            <div class="flex items-center space-x-4">
+                <button
+                    class="hidden md:block text-gray-600 underline px-4 py-2 hover:bg-blue-600 hover:text-white transition font-Righteous">Login</button>
+                <button
+                    class="bg-linear-to-t from-purple-900 to-indigo-800 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition font-Righteous">Signup</button>
+            </div>
+            <div class="flex sm:hidden flex-1 justify-end">
+                <i class="text-2xl fa-solid fa-bars"></i>
+            </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-linear-to-t from-purple-900 to-indigo-800 text-white py-10">
+        <div class="container relative py-5 mx-auto flex flex-col-reverse md:flex-row items-center">
+            <div class="md:w-1/2 space-y-12">
+                <p class="uppercase text-sm tracking-widest text-indigo-200">Successful coaches are visionaries</p>
+                <h1 class="text-4xl md:text-5xl font-bold font-righteous">
+                    Good <span class="text-blue-400">coaching</span> is <br>
+                    good teaching & <br>nothing else.
+                </h1>
+                <div class="flex justify-center align-center absolute right-100 top-30 gap-3 font-righteous text-sm">
+                    <img src="Assests/Page1-arrow.png" alt="Arrow Image" class="">
+                    <p class="mt-3">Shyam<br>In a coaching role, you ask the <br>questions and rely more on your
+                        <br>staff, who become the experts, to <br>provide the information.<br><span
+                            class="text-blue-500">4.9</span>
+                    </p>
+                </div>     
+                <div class="flex flex-wrap gap-4">
+                    <button
+                        class="border border-white rounded-md text-white px-6 py-3 rounded font-semibold hover:bg-indigo-100 transition">View
+                        Courses</button>
+                    <button
+                        class=" px-6 py-3 rounded font-semibold hover:bg-white hover:text-indigo-600 transition">Get
+                        Free Consultation</button>
+                </div>
+                <div class="p-2 bg-white focus:outline-none rounded-md flex justify-evenly gap-0">
+                    <input type="text" placeholder="What do you want to learn today?"
+                        class="px-4 py-2 w-1/3 md:w-3/4 text-gray-900 focus:outline-none">
+                    <button
+                        class="bg-linear-to-t from-purple-900 to-indigo-800 px-5 py-2 rounded-md hover:bg-blue-600 transition"><i
+                            class="fa-solid fa-magnifying-glass mx-2"></i>Search</button>
+                </div>
+            </div>
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <img src="Assests/Page1-bgelipce.png" alt="Background Image"
+                    class="z-2 ml-8- left-10">
+                <img src="Assests/Page1-heroimg.png" alt="Hero Image"
+                    class="absolute mt-35 left-210 md:top-0 size-135 md:w-auto">
+            </div>
+        </div>
+        <!-- Partner logos -->
+        <div class="bg-linear-to-t from-purple-900 to-indigo-900 flex justify-evenly items-center h-13 pt-10 mt-15">
+            <img src="Assests/Page1-spotify.svg" alt="Spotify" class="size-20">
+            <img src="Assests/Page1-amazon.svg" alt="Amazon" class="size-20">
+            <img src="Assests/Page1-spotify.svg" alt="Spotify" class="size-20">
+            <img src="Assests/Page1-cisco.svg" alt="Cisco" class="size-20">
+            <img src="Assests/Page1-logitech.svg" alt="Logitech" class="size-20">
+            <img src="Assests/Page1-amazon.svg" alt="Amazon" class="size-20">
+        </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="py-20 bg-linear-to-t from-sky-200 to-white-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-2">Featured <span class="text-blue-400">Courses</span></h2>
+            <p class="text-center font-semibold mb-19">The feature courses are we invented our teaching part</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                <!-- Course Card Example -->
+                <div class="bg-white rounded-lg shadow-md pb-5">
+                    <img src="Assests/Page2-img1.png" 
+                        alt="Course Image" class="rounded-t-lg mb-5">
+                        <div class="flex justify-between items-center text-gray-400 font-righteous text-sm px-5">
+                        <p>1,957 Students</p>
+                        <p>01h 59m</p>
+                        </div>
+                    <h3 class="text-gray-900 font-semibold mb-2 px-5 py-6">Motion Graphics: Create a Nice <br>Typography Animation</h3>
+                  <div class="flex justify-between items-center text-gray-500 px-5">
+                       <p class="font-bold">Rs.499</p>
+                       <i class="fa-solid fa-cart-shopping fa-flip-horizontal" style="color: #08152b;"></i>
+                   </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md pb-5">
+                    <img src="Assests/Page2-img2.png"
+                        alt="Course Image" class="rounded-t-lg mb-5">
+                     <div class="flex justify-between items-center text-gray-400 font-righteous text-sm px-5">
+                        <p>9,575 Students</p>
+                        <p>01h 59m</p>
+                        </div>
+                    <h3 class="text-gray-900 font-semibold mb-2 px-5 py-6">Advance PHP knowledge with JS to <br>make smart web</h3>
+                    <div class="flex justify-between items-center text-gray-500 px-5">
+                       <p class="font-bold">Rs.499</p>
+                       <i class="fa-solid fa-cart-shopping fa-flip-horizontal" style="color: #08152b;"></i>
+                   </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md pb-5">
+                    <img src="Assests/Page2-img3.png"
+                        alt="Course Image" class="rounded-t-lg mb-5 ">
+                       <div class="flex justify-between items-center text-gray-400 font-righteous text-sm px-5">
+                        <p>2,957 Students</p>
+                        <p>02h 49m</p>
+                        </div>
+                    <h3 class="text-gray-900 font-semibold mb-2 px-5 py-6">Education Software and PHP and JS <br>System Script</h3>
+                   <div class="flex justify-between items-center text-gray-500 px-5">
+                       <p class="font-bold">Rs.499</p>
+                       <i class="fa-solid fa-cart-shopping fa-flip-horizontal" style="color: #08152b;"></i>
+                   </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md pb-5">
+                    <img src="Assests/Page2-img4.png" 
+                        alt="Course Image" class="rounded-t-lg mb-5">
+                      <div class="flex justify-between items-center text-gray-400 font-righteous text-sm px-5">
+                        <p>5,457 Students</p>
+                        <p>01h 49m</p>
+                        </div>
+                    <h3 class="text-gray-900 font-semibold mb-2 px-5 py-6">The Complete Financial Analyst <br>Training & Investing</h3>
+                  <div class="flex justify-between items-center text-gray-500 px-5">
+                       <p class="font-bold">Rs.499</p>
+                       <i class="fa-solid fa-cart-shopping fa-flip-horizontal" style="color: #08152b;"></i>
+                   </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md pb-5">
+                    <img src="Assests/Page2-img5.png" 
+                        alt="Course Image" class="rounded-t-lg mb-5">
+                       <div class="flex justify-between items-center text-gray-400 font-righteous text-sm px-5">
+                        <p>595 Students</p>
+                        <p>01h 49m</p>
+                        </div>
+                    <h3 class="text-gray-900 font-semibold mb-2 px-5 py-6">Marketing 2023: Complete Guide To <br>Instagram Growth</h3>
+                    <div class="flex justify-between items-center text-gray-500 px-5">
+                       <p class="font-bold">Rs.499</p>
+                       <i class="fa-solid fa-cart-shopping fa-flip-horizontal" style="color: #08152b;"></i>
+                   </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md pb-5">
+                    <img src="Assests/Page2-img6.png" 
+                        alt="Course Image" class="rounded-t-lg mb-5">
+                   <div class="flex justify-between items-center text-gray-400 font-righteous text-sm px-5">
+                        <p>458 Students</p>
+                        <p>03hr 00m</p>
+                        </div>
+                    <h3 class="text-gray-900 font-semibold mb-2 px-5 py-6">Learn 3D Modelling and Design <br>for Beginners</h3>
+                   <div class="flex justify-between items-center text-gray-500 px-5">
+                       <p class="font-bold">Rs.499</p>
+                       <i class="fa-solid fa-cart-shopping fa-flip-horizontal" style="color: #08152b;"></i>
+                   </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <button class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Explore
+                    Courses</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Learn Section -->
+    <section class="py-20 bg-gradient-to-r from-indigo-300 to-indigo-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Why <span class="text-indigo-900">learn </span>with our courses?</h2>
+            <p class="mb-12 text-indigo-200 pb-20">We are providing the best courses and top classes<br>And extraordinary
+                placement training.</p>
+            <div class="grid grid-cols-3  divide-x-3 divide-dashed md:grid-cols-3 gap-12">
+                <div class="space-y-4 grid justify-items-center">
+                    <img src="Assests/Page3-img1.svg" alt="Learn Icon" class="text-4xl">
+                    <h3 class="font-semibold text-xl">01. Learn</h3>
+                    <p>Learn continually. There is always <br>“one more thing” to learn.</p>
+                </div>
+                <div class="space-y-4 grid justify-items-center">
+                    <img src="Assests/Page3-img2.svg" alt="Learn Icon" class="text-4xl">
+                    <h3 class="font-semibold text-xl">02. Graduate</h3>
+                    <p>Be flexible be courageous, <br>be your best.</p>
+                </div>
+                <div class="space-y-4 grid justify-items-center">
+                    <img src="Assests/Page3-img3.svg" alt="Learn Icon" class="text-4xl">
+                    <h3 class="font-semibold text-xl">03. Work</h3>
+                    <p>Great companies are built in<br> the effort. Find best work<br>put in by team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Categories -->
+    <section class="py-30 bg-gray-50 bg-linear-to-t from-sky-200 to-white-800 max-h-1130">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Top <span class="text-blue-600">Categories</span></h2>
+            <p class="text-gray-600 pb-20">100+ unique online course list designs</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+                <div class="bg-white grid items-center rounded-md shadow py-9 px-4 gap-4">
+                    <img src="Assests/Page4-img1.png" alt="" class="size-20 ml-9">
+                    <p class="text-gray-700 font-semibold">Digital<br>Marketing</p>
+                    <p class="text-gray-500 font-semibold text-sm">25 Courses</p>
+                </div>
+                    <div class="bg-white grid items-center rounded-md shadow py-9 px-4 gap-4">
+                    <img src="Assests/Page4-img2.png" alt="" class="size-20 ml-9">
+                    <p class="text-gray-700 font-semibold">Web <br>Development</p>
+                    <p class="text-gray-500 font-semibold text-sm">10 Courses</p>
+                </div>
+                    <div class="bg-white grid items-center rounded-md shadow py-9 px-4 gap-4">
+                    <img src="Assests/Page4-img3.png" alt="" class="size-20 ml-9">
+                    <p class="text-gray-700 font-semibold">Art &<br> Humanities</p>
+                    <p class="text-gray-500 font-semibold text-sm">16 Courses</p>
+                </div>
+                    <div class="bg-white grid items-center rounded-md shadow py-9 px-4 gap-4">
+                    <img src="Assests/Page4-img4.png" alt="" class="size-20 ml-9">
+                    <p class="text-gray-700 font-semibold">Personal <br>Development</p>
+                    <p class="text-gray-500 font-semibold text-sm">12 Courses</p>
+                </div>
+                    <div class="bg-white grid items-center rounded-md shadow py-9 px-4 gap-4">
+                    <img src="Assests/Page4-img5.png" alt="" class="size-20 ml-9">
+                    <p class="text-gray-700 font-semibold">IT and<br> Software</p>
+                    <p class="text-gray-500 font-semibold text-sm">10 Courses</p>
+                </div>
+                    <div class="bg-white grid items-center rounded-md shadow py-9 px-4 gap-4">
+                    <img src="Assests/Page4-img6.png" alt="" class="size-20 ml-9">
+                    <p class="text-gray-700 font-semibold">Graphic <br>Design</p>
+                    <p class="text-gray-500 font-semibold text-sm">15 Courses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 💌 Subscribe Section -->
+    <section class="bg-linear-to-t from-sky-200 to-white-800 text-white w-full max-h-full py-20 text-center relative overflow-hidden">
+        <div class="bg-linear-to-bl py-10 mx-50 grid rounded-xl from-pink-500 via-indigo-700 to-indigo-300">
+            <div class="grid gap-10 relative">
+            <img src="Assests/Page5-imgup.png" class="absolute px-12 w-300">
+            <h2 class="text-2xl md:text-3xl font-righteous">Subscribe For Get Update<br>Every New Courses</h2>
+            <p class="text-white/90 mb-6">Join our mailing list and never miss new courses or free sessions.</p>
+            </div>
+            <div class="flex justify-center items-center max-w-md mx-auto bg-white/50 rounded-lg overflow-hidden mt-10">
+            <input type="email" placeholder="Enter your email"
+                class="p-3 w-64 md:w-80 rounded-l-lg text-gray-800 outline-none">
+            <button
+                class="bg-indigo-700 px-6 py-3 rounded-r-lg font-semibold hover:bg-indigo-800 transition">Subscribe</button>
+            </div>
+       </div>
+    <div class="w-0 h-0 border-r-[75px] border-r-blue-500 border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent rounded-xl absolute left-22 top-120 transform -translate-y-1/2 -rotate-45 opacity-60"></div>      
+    <div class="w-0 h-0 border-r-[75px] border-r-blue-500 border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent rounded-xl absolute left-180 top-35 transform -translate-y-1/2 -rotate-45 opacity-60"></div>      
+    <div class="w-0 h-0 border-r-[75px] border-r-blue-500 border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent rounded-xl absolute left-300 top-150 transform -translate-y-1/2 -rotate-45 opacity-60"></div>      
+
+    <!-- </section> -->
+
+    <!-- 🎥 Video Section -->
+    <!-- <section class="py-16 bg-blue-50 text-center"> -->
+        <div class="inline-block relative">
+            <img src="Assests/Page5-imgdown.png" alt="Video thumbnail" class="rounded-2xl my-50 w-200 h-120">
+            <img src="Assests/Page5-design.svg" alt="Decorative Design"
+                class="absolute size-50 top-125 left-170">
+            <img src="Assests/Page5-playbtn.svg" alt="Play Button"
+                class="absolute size-20 top-100 left-90 size-30 cursor-pointer hover:scale-110 transition-transform">
+        </div>
+    <!-- </section> -->
+
+    <!-- ⭐ Testimonials -->
+    <!-- <section class="py-16 bg-blue-50 text-center"> -->
+    <div class="font-righteous ">
+         <div class="grid gap-2 mb-20">
+           <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Testimonials</h2>
+           <p class="text-gray-500 mb-12">What our students say about us</p>
+        </div>
+        <div class="flex gap-4 max-w-6xl mx-auto">
+            <div class="bg-white shadow-md rounded-xl">
+                <img src="Assests/Page6-infoimg.png" alt="User" class="w-13 h-13 mx-30 absolute ">
+                <p class="text-gray-600">“Such a great learning experience! The trainers explained everything very
+                    clearly.”</p>
+                    <img src="Assests/Page6-stars.svg" alt="User" class="w-20 h-20 rounded-full">
+            </div>
+            <div class="bg-white shadow-md rounded-xl">
+                 <img src="Assests/Page6-infoimg.png" alt="User" class="w-10 h-10 rounded-full">
+                <p class="text-gray-600 ">“Loved the structure of lessons and the projects helped a lot in real
+                    practice.”</p>
+                    <img src="Assests/Page6-stars.svg" alt="User" class="w-20 h-20 rounded-full">
+            </div>
+            <div class="bg-white shadow-md rounded-xl">
+                 <img src="Assests/Page6-infoimg.png" alt="User" class="w-10 h-10 rounded-full">
+                <p class="text-gray-600 ">“One of the best online platforms for career growth and learning.”</p>     
+                <img src="Assests/Page6-stars.svg" alt="User" class="w-20 h-20 rounded-full">
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- 🔵 Footer -->
+    <footer class="bg-gradient-to-r from-purple-700 via-blue-700 to-indigo-700 text-white py-12 px-8 md:px-20">
+        <div class="grid md:grid-cols-5 gap-8">
+            <div>
+                <h3 class="font-bold text-lg mb-3">Contact</h3>
+                <p>@learnestudy<br>King St, Chennai, India</p>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-lg mb-3">Courses</h3>
+                <ul class="space-y-1">
+                    <li>Online Classes</li>
+                    <li>Video Courses</li>
+                    <li>Live Sessions</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-lg mb-3">Community</h3>
+                <ul class="space-y-1">
+                    <li>Learners</li>
+                    <li>Partners</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-lg mb-3">Quick Links</h3>
+                <ul class="space-y-1">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-lg mb-3">More</h3>
+                <ul class="space-y-1">
+                    <li>Privacy Policy</li>
+                    <li>Terms</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-5 mt-8">
+            <img src="facebook.png" class="w-6 h-6">
+            <img src="whatsapp.png" class="w-6 h-6">
+            <img src="twitter.png" class="w-6 h-6">
+            <img src="youtube.png" class="w-6 h-6">
+        </div>
+
+        <p class="text-center text-sm mt-6 text-white/80">© 2025 Learnestudy. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>
